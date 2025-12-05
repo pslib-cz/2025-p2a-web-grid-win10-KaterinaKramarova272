@@ -1,11 +1,11 @@
 .start-panel {
     display: grid;
-    grid-template-columns: 50px minmax(150px, auto)  auto;
+    grid-template-columns: 50px minmax(150px, auto)  1fr;
     gap: 5px;
 }
 .start-panel__icons {
     display: grid;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 1fr repeat(5, auto);
 }
 .start-panel__grid {
     display: grid;
@@ -13,7 +13,7 @@
         "office zabava"
         "internet zabava";
     gap: 5px;
-    
+    align-content: start;
 }
 .apps--office {
     grid-area: office;
